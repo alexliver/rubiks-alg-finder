@@ -6,5 +6,6 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "arrow>=1.4.0",
+    "kociemba>=1.2.1",
     "pudb>=2025.1.5",
 ]
