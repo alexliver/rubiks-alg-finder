@@ -656,10 +656,25 @@ def main(allowed_moves='RUF'):
     init_cube = Cube(''.join(['nnnn', 'nngn', 'nngw', 'nnoo', 'nnnb', 'nrww']),
                      ''.join(['nnnn', 'nnrg', 'nggn', 'nooo', 'nrbb', 'wwww']),
                      'yrgobw')
+    init_cube = Cube(''.join(['nnnn', 'nnwn', 'nngr', 'nnoo', 'nnnb', 'ngww']),
+                     ''.join(['nnnn', 'nnrr', 'nggn', 'nooo', 'ngbb', 'wwww']),
+                     'yrgobw')
+    init_cube = Cube(''.join(['nnnn', 'nnwn', 'nngr', 'nnoo', 'nnnb', 'ngww']),
+                     ''.join(['nnnn', 'nnrg', 'nggn', 'nooo', 'nrbb', 'wwww']),
+                     'yrgobw')
     init_cube = Cube(''.join(['nnnn', 'nngn', 'nngw', 'nnoo', 'nnnb', 'nrww']),
                      ''.join(['nnnn', 'nnrr', 'nggn', 'nooo', 'ngbb', 'wwww']),
                      'yrgobw')
     init_cube = Cube(''.join(['nnnn', 'nnng', 'nngn', 'nnoo', 'nnrb', 'wnww']),
+                     ''.join(['nnnn', 'ngrn', 'nggr', 'nooo', 'nnbb', 'wwww']),
+                     'yrgobw')
+    init_cube = Cube(''.join(['nnnn', 'nnng', 'nngn', 'nnoo', 'nnrb', 'wnww']),
+                     ''.join(['nnnn', 'nrrn', 'nggg', 'nooo', 'nnbb', 'wwww']),
+                     'yrgobw')
+    init_cube = Cube(''.join(['nnnn', 'nnnr', 'nngn', 'nnoo', 'nnwb', 'gnww']),
+                     ''.join(['nnnn', 'ngrn', 'nggr', 'nooo', 'nnbb', 'wwww']),
+                     'yrgobw')
+    init_cube = Cube(''.join(['nnnn', 'nnnw', 'nngn', 'nnoo', 'nngb', 'rnww']),
                      ''.join(['nnnn', 'ngrn', 'nggr', 'nooo', 'nnbb', 'wwww']),
                      'yrgobw')
     init_cube = Cube(''.join(['nnnn', 'nnnr', 'nngn', 'nnoo', 'nnwb', 'gnww']),
@@ -681,6 +696,16 @@ def main(allowed_moves='RUF'):
     init_cube = Cube(''.join(['nnnn', 'nnwb', 'nnrg', 'nnng', 'nnon', 'wown']),
                      ''.join(['nnnn', 'nnbb', 'nrrn', 'nggg', 'nooo', 'wwww']),
                      'ybrgow')
+    init_cube = Cube(''.join(['nnnn', 'nngb', 'nnro', 'nnng', 'nnon', 'wwwn']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nogg', 'noog', 'wwww']),
+                     'ybrgow')
+    init_cube = Cube(''.join(['nnnn', 'nnob', 'nnrw', 'nnng', 'nnon', 'wgwn']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nogg', 'noog', 'wwww']),
+                      'ybrgow')
+    init_cube = Cube(''.join(['nnnn', 'nnwb', 'nnrg', 'nnng', 'nnon', 'wown']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nogg', 'noog', 'wwww']),
+                      'ybrgow')
+
     target_cube = Cube(''.join(['nnnn', 'nnnb', 'nnrn', 'nnng', 'nnon', 'wnwn']),
                        ''.join(['nnnn', 'nnbb', 'nrrn', 'nngg', 'noon', 'wwww']),
                        'ybrgow')
