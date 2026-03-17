@@ -675,6 +675,12 @@ def main(allowed_moves='RUF'):
     init_cube = Cube(''.join(['nnnn', 'nngb', 'nnro', 'nnng', 'nnon', 'wwwn']),
                      ''.join(['nnnn', 'nnbb', 'nrrn', 'nggg', 'nooo', 'wwww']),
                      'ybrgow')
+    init_cube = Cube(''.join(['nnnn', 'nnob', 'nnrw', 'nnng', 'nnon', 'wgwn']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nggg', 'nooo', 'wwww']),
+                     'ybrgow')
+    init_cube = Cube(''.join(['nnnn', 'nnwb', 'nnrg', 'nnng', 'nnon', 'wown']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nggg', 'nooo', 'wwww']),
+                     'ybrgow')
     target_cube = Cube(''.join(['nnnn', 'nnnb', 'nnrn', 'nnng', 'nnon', 'wnwn']),
                        ''.join(['nnnn', 'nnbb', 'nrrn', 'nngg', 'noon', 'wwww']),
                        'ybrgow')

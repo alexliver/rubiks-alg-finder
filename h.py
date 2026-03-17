@@ -170,10 +170,10 @@ def main():
         text = translate(text)
         try:
             res = kociemba.solve(text)
-            print(result)
-            print(text)
+            #print(result)
+            #print(text)
             print(res)
-            print(reverse_sol(res))
+            #print(reverse_sol(res))
             break
         except:
             continue
@@ -183,4 +183,5 @@ def main():
     #print(res)
 
 if __name__ == '__main__':
-    main()
+    for i in range(1):
+        main()
