@@ -646,6 +646,7 @@ def main(allowed_moves='RUF'):
     #init_cube.move_seq("U'F'U'L'UL2FL'")
     #init_cube.move_seq("LDl'U'lD'L2U'L")
     #'''
+    ''' exf2l rl lr 
     init_cube = Cube(''.join(['nnnn', 'nnrn', 'nngg', 'nnoo', 'nnnb', 'nwww']),
                      ''.join(['nnnn', 'nnrg', 'nggn', 'nooo', 'nrbb', 'wwww']),
                      'yrgobw')
@@ -676,9 +677,32 @@ def main(allowed_moves='RUF'):
     init_cube = Cube(''.join(['nnnn', 'nnnw', 'nngn', 'nnoo', 'nngb', 'rnww']),
                      ''.join(['nnnn', 'ngrn', 'nggr', 'nooo', 'nnbb', 'wwww']),
                      'yrgobw')
+    init_cube = Cube(''.join(['nnnn', 'nnnr', 'nngn', 'nnoo', 'nnwb', 'gnww']),
+                     ''.join(['nnnn', 'nrrn', 'nggg', 'nooo', 'nnbb', 'wwww']),
+                     'yrgobw')
+    init_cube = Cube(''.join(['nnnn', 'nnnw', 'nngn', 'nnoo', 'nngb', 'rnww']),
+                     ''.join(['nnnn', 'nrrn', 'nggg', 'nooo', 'nnbb', 'wwww']),
+                     'yrgobw')
     target_cube = Cube(''.join(['nnnn', 'nnnn', 'nngn', 'nnoo', 'nnnb', 'nnww']),
                        ''.join(['nnnn', 'nnrn', 'nggn', 'nooo', 'nnbb', 'wwww']),
                        'yrgobw')
+    #'''
+    init_cube = Cube(''.join(['nnnn', 'nngb', 'nnro', 'nnng', 'nnon', 'wwwn']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nggg', 'nooo', 'wwww']),
+                     'ybrgow')
+    init_cube = Cube(''.join(['nnnn', 'nngb', 'nnro', 'nnng', 'nnon', 'wwwn']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nogg', 'noog', 'wwww']),
+                     'ybrgow')
+    init_cube = Cube(''.join(['nnnn', 'nnob', 'nnrw', 'nnng', 'nnon', 'wgwn']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nogg', 'noog', 'wwww']),
+                      'ybrgow')
+    init_cube = Cube(''.join(['nnnn', 'nnwb', 'nnrg', 'nnng', 'nnon', 'wown']),
+                     ''.join(['nnnn', 'nnbb', 'nrrn', 'nogg', 'noog', 'wwww']),
+                      'ybrgow')
+
+    target_cube = Cube(''.join(['nnnn', 'nnnb', 'nnrn', 'nnng', 'nnon', 'wnwn']),
+                       ''.join(['nnnn', 'nnbb', 'nrrn', 'nngg', 'noon', 'wwww']),
+                       'ybrgow')
     ''' 2x2
     #init_cube = Cube2(''.join(['nnnn', 'nnbg', 'nngr', 'nnoo', 'nnrb', 'wwww']))
     init_cube = Cube2(''.join(['nnnn', 'nngr', 'nnro', 'nnog', 'nnbb', 'wwww']))
@@ -816,7 +840,8 @@ def main(allowed_moves='RUF'):
     target_cube = get_default_cube()
     '''
     #solve_rec(init_cube, get_is_solved_func(target_cube),allowed_moves, [], 0, 7)
-    solve_rec(init_cube, get_is_f2l_paired_func(target_cube, 'r', 'g'),allowed_moves, [], 0, 7)
+    #solve_rec(init_cube, get_is_f2l_paired_func(target_cube, 'r', 'g'),allowed_moves, [], 0, 7)
+    solve_rec(init_cube, get_is_f2l_paired_func(target_cube, 'o', 'g'),allowed_moves, [], 0, 7)
     #solve_rec(init_cube, is_solved_cpll,allowed_moves, [], 0, 10)
     #solve_rec(init_cube, is_solved_fl,allowed_moves, [], 0, 6)
 
